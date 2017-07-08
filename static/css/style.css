@@ -59,8 +59,31 @@
 .slide {
     position: absolute;
     bottom: 10%;
-    left: 15%;
+    padding-top: 10px;
+    padding-left: 10%;
     color: white;
     opacity: 0.8;
     font-size: 3rem;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to right, orange 9%, black 40%); 
+}
+
+.right_slide {
+    animation:right_slide 2s ease-out infinite;
+    position: absolute;
+    left: 10%;
+}
+
+@keyframes right_slide {
+    0% {
+        display: block;
+        left: 10%;
+        opacity: 0.8;
+    }
+    100% {
+        display: block;
+        left: 23%;
+        opacity: 0;
+    }
 }
